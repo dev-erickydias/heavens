@@ -4,17 +4,57 @@
   width: 100%;
   font-family: "Inter", "Arial", "Helvetica", sans-serif;
   overflow: hidden;
+  font-family: "Agdasima", sans-serif;
+  font-weight: normal;
 }
 .container {
-    width: 50%;
-    border: 3px solid red;
-    margin: 0 auto;
-    
-
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .logo {
-    width: 150px;
-    border-radius: 100%;
-    border: 5px solid black;
-    margin: 20px auto 15px;
+  width: 150px;
+  border-radius: 100%;
+  margin: 20px auto 5px;
+}
+.title {
+  font-family: "Agdasima", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0 auto;
+}
+.subtitle {
+  margin: 0 auto;
+  font-family: "Agdasima", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.menu {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__title {
+  margin: 15px auto 5px;
+  font-family: "Agdasima", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+.button {
+  width: 60%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px auto 0;
+  background-color: #eaeaea;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  box-shadow: 5px 5px ;
 }
