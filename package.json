@@ -1,0 +1,16 @@
+{
+  "name": "linkforinstagram",
+  "version": "1.0.0",
+  "description": "Esta será um link para o ser colocado no instagram do salao Heavens Hair",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.51.0"
+  }
+}

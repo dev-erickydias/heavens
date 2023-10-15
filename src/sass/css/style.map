@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/_variaveis.scss"
+	],
+	"sourcesContent": [
+		"@import \"variaveis\";\r\n\r\nbody {\r\n  background: $preto;\r\n}\r\n.logo__image {\r\n  width: 50px;\r\n}",
+		"$preto: #000;"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,IAAI,CAAC;EACH,UAAU,ECHJ,IAAI;CDIX;;;AACD,AAAA,YAAY,CAAC;EACX,KAAK,EAAE,IAAI;CACZ"
+}
