@@ -6,9 +6,9 @@
 		"../scss/_variaveis.scss"
 	],
 	"sourcesContent": [
-		"@import \"variaveis\";\r\n\r\nbody {\r\n  background: $preto;\r\n}\r\n.logo__image {\r\n  width: 50px;\r\n}",
-		"$preto: #000;"
+		"@import \"variaveis\";\r\n\r\nbody {\r\n  background: $bgSite;\r\n}\r\n.logo__image {\r\n  width: 50px;\r\n}",
+		"$bgSite: #000;\r\n"
 	],
 	"names": [],
-	"mappings": ";AAEA,AAAA,IAAI,CAAC;EACH,UAAU,ECHJ,IAAI;CDIX;;;AACD,AAAA,YAAY,CAAC;EACX,KAAK,EAAE,IAAI;CACZ"
+	"mappings": ";AAEA,AAAA,IAAI,CAAC;EACH,UAAU,ECHH,IAAI;CDIZ;;;AACD,AAAA,YAAY,CAAC;EACX,KAAK,EAAE,IAAI;CACZ"
 }
