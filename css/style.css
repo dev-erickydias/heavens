@@ -1,8 +1,12 @@
 /* Estilos gerais da página */
 .page {
-  background-color: #000000;
   color: #ffffff;
-  font-family: "Inter", "Arial", "Helvetica", sans-serif;
+  background: rgb(10, 61, 86);
+  background: linear-gradient(
+    189deg,
+    rgba(10, 61, 86, 1) 0%,
+    rgba(4, 13, 26, 1) 100%
+  );
   overflow: hidden;
 }
 
@@ -55,21 +59,30 @@
   font-size: 20px;
   text-align: center;
   width: 100%;
-  margin: 15px 0 5px;
+  margin: 15px 0 0px;
 }
 
-/* Botão */
+/* Botão */ 
 .button {
-  width: 100%;
-  padding: 10px 20px;
-  margin: 10px 0;
-  background-color: #eaeaea;
-  color: #333;
+  background-color: transparent;
+  color: #fff;
   text-decoration: none;
-  border: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  
 }
 
+.footer {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer span {
+  display: flex;
+  margin: 0 auto;
+  font-family: "Agdasima", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+}
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .container {
@@ -79,4 +92,7 @@
   .menu {
     width: 80%;
   }
+}
+.link_text {
+
 }
