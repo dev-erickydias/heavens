@@ -1,7 +1,7 @@
 .shadow{
   position: relative;
   width: 300px;
-  height: 20px;
+  height: 1.5rem;
   margin-top: 15px;
   background-color: rgba(7, 37, 56, 1);
   align-content: center;
@@ -9,7 +9,7 @@
   align-items: center;
   ;
   border-radius: 20px;
-  
+  cursor: pointer;
  }
 
  .shadow:before,
