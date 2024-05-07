@@ -1,0 +1,49 @@
+.navigation {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(214, 182, 102, 0.3);
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.nav__logo {
+    width: 103px;
+    height: 103px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu_item {
+    color:  #AC7027;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu_btn {
+    height: 50px;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: var(--degrade-angular, conic-gradient(from 180deg at 50% 50%, #CE980F 118.80000472068787deg, #FFD770 295.19999742507935deg));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid var(--degrade-angular, #CE980F);
+}
