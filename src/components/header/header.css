@@ -1,0 +1,73 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+}
+
+.imgBackGound {
+    position: absolute;
+    top: 110px;
+    right: 100px;
+    width: 876.469px;
+    height: 871px;
+    z-index: 0;
+}
+
+.title {
+    margin: 160px 0 22px;
+    color: #734814;
+    font-family: Allura;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subtitle {
+    color: #734814;
+    font-family: "Josefin Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    margin: 0 0 80px;
+}
+.buttons{
+    display: flex;
+    gap: 30px;
+}
+.btn__agenda {
+    height: 40px;
+    width: 146px;
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--Secundario, #296D65);
+    color: #FFFCF5;
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.btn__contacto {
+    height: 40px;
+    width: 187px;
+    display: inline-flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--Azul-Principal, #1E403C);
+    color: var(--Azul-Principal, #1E403C);
+    font-family: "Josefin Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
