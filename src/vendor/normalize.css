@@ -7,7 +7,12 @@
  * 1. Corrige a altura da linha em todos os navegadores. 
  * 2. Evita ajustes do tamanho da fonte após alterações de orientação no iOS. 
  */
-
+  button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
