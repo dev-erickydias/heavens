@@ -1,19 +1,12 @@
 @import url(././vendor/normalize.css);
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-* {
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
+@import url(./blocks/configs.css);
 
 
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Inter, "Josefin Sans", Alura, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,12 +16,5 @@ code {
     monospace;
 }
 
-.pages{
-  background-color: #FFFCF5;
-  width: 1280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
+
+
