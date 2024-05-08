@@ -78,3 +78,9 @@
     font-weight: 400;
     line-height: normal;
 }
+.link{
+    color: #FFFCF5;
+}
+.link:hover{
+    text-decoration: none;
+}

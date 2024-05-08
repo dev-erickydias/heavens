@@ -34,7 +34,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgba(113, 71, 20, 0.7);
     /* Cor do thumb ao passar o mouse por cima */
     border-radius: 20px;
 }
@@ -47,7 +47,7 @@
 }
 
 ::-webkit-scrollbar-horizontal-track {
-    background: #734814;
+    background: rgba(115, 72, 20, 0.702);
     /* Cor de fundo do track horizontal */
     border-radius: 20px;
 }
@@ -59,7 +59,7 @@
 }
 
 ::-webkit-scrollbar-horizontal-thumb:hover {
-    background: #734814;
+    background: #73481499;
     /* Cor do thumb horizontal ao passar o mouse por cima */
     border-radius: 20px;
 }

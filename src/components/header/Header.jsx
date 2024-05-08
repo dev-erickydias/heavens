@@ -2,7 +2,7 @@ import "./header.css"
 import imgBackGound from "../../assents/Assets_Website/desktop/Vector_full.png"
 
 
-import Navigation from "../navigation/Navigation"
+import Navigation from "./navigation/Navigation"
 
 
 function Header() {
@@ -19,7 +19,7 @@ function Header() {
                         <h2 className="subtitle">Liberte sua beleza com estilo e confiança.</h2>
                     </div>
                     <div className="buttons">
-                        <button className="btn__agenda">Agende aqui</button>
+                        <button className="btn__agenda"><a target="_blank" href="https://www.heavenshair.pt/" className="link">Agende aqui</a></button>
                         <button className="btn__contacto">Entre em contato</button>
                     </div>
                 </div>
