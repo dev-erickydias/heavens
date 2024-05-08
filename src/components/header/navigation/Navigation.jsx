@@ -1,6 +1,6 @@
 import "./navigation.css"
 
-import logo from "../../assents/Logos/.png/Degradê.png"
+import logo from "../../../assents/Logos/.png/Degradê Reduzido.png"
 const Navigation = () => {
   return (
     <nav className="navigation">
