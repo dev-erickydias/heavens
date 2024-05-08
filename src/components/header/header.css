@@ -1,18 +1,25 @@
 .header {
     display: flex;
     flex-direction: column;
-    width: 1280px;
+    width: 1580px;
+    height: 850px;
 }
 
 .imgBackGound {
-    position: absolute;
-    top: 110px;
-    right: 100px;
-    width: 876.469px;
-    height: 871px;
+    position: relative;
+    top: -450px;
+    right: -850px;
+    width: 800px;
     z-index: 0;
 }
 
+.header__container{
+}
+.contein{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0;
+}
 .title {
     margin: 160px 0 22px;
     color: #734814;
