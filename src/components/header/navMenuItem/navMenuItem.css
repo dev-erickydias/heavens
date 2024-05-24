@@ -1,0 +1,12 @@
+.header__menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.header__menu__item a {
+    color: #AC7027; /* Cor do texto (Tomato) */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
