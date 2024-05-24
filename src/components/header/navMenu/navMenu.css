@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 151px;
+  border-bottom: 2px solid #d6b666;
+  align-items: center;
+}
+.logo {
+}
+.header__nav__menu {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+}
+.nav__btn {
+    height: 42px;
+    width: 170px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: conic-gradient(
+      from 180deg at 50% 50%,
+      #FFD770 -64.8deg,
+      #CE980F 118.8deg,
+      #FFD770 295.2deg,
+      #CE980F 478.8deg
+    );
+    border: 1px solid;
+    border-image-source: conic-gradient(
+      from 180deg at 50% 50%,
+      #ffd770 -64.8deg,
+      #ce980f 118.8deg,
+      #ffd770 295.2deg,
+      #ce980f 478.8deg
+    );
+    border-image-slice: 1;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 25px;
+}
+
