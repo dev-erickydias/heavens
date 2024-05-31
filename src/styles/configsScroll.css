@@ -1,0 +1,48 @@
+/* Estilizando o scroll vertical */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Cor de fundo do track */
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D6B666;
+    /* Cor do thumb (o indicador do scroll) */
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(113, 71, 20, 0.7);
+    /* Cor do thumb ao passar o mouse por cima */
+    border-radius: 20px;
+}
+
+/* Estilizando o scroll horizontal */
+::-webkit-scrollbar-horizontal {
+    height: 10px;
+    /* Altura do scroll */
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-horizontal-track {
+    background: rgba(115, 72, 20, 0.702);
+    /* Cor de fundo do track horizontal */
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-horizontal-thumb {
+    background: #734814;
+    /* Cor do thumb horizontal */
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-horizontal-thumb:hover {
+    background: #73481499;
+    /* Cor do thumb horizontal ao passar o mouse por cima */
+    border-radius: 20px;
+}
