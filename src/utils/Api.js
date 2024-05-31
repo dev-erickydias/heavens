@@ -12,7 +12,6 @@ export default async function Api(){
         }
 
         const data = await response.json();
-        console.log(data);
         return data.getsingle?.[0].estabelecimentos?.[0].servicos;
     } catch (error) {
         console.error('Error fetching agent data:', error.message);

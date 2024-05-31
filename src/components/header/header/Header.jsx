@@ -1,11 +1,14 @@
 import React from "react";
 
-import NavMenu from "../navMenu/NavMenu";
+import Hero from "../hero/Hero";
 
 export default function Header() {
+
+
+  
   return (
     <header className="header">
-      <NavMenu />
+      <Hero />
     </header>
   );
 }

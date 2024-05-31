@@ -1,0 +1,19 @@
+
+@import url(../vendor/normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display =trocar');
+.page {
+  max-width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.servico__item {
+  background: #1e403c;
+  width: 235px !important;
+  height: 100.6px !important;
+  margin: 0 0 0 50px !important;
+}
+.servicos__item_contain {
+  display: flex;
+}
