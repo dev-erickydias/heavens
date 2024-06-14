@@ -1,34 +1,89 @@
 .header__hero {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
-
-.header__hero__text{
-
+  text-align: center;
 }
 
 .header__hero__text__title {
   color: #734814;
   font-family: Allura;
-  font-size: 44px;
+  font-size: 36px;
   font-weight: 400;
-  line-height: 55px;
-  text-align: left;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 20px;
 }
+
 .header__hero__text__description {
   color: #734814;
   font-family: Josefin Sans;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 50px;
-  text-align: left;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 30px;
 }
-.hader__hero__image {
-  width: 876.47px;
-  height: 871px;
-  top: 100px;
-  left: 565.63px;
-  gap: 0px;
-  opacity: 0px;
+
+.header__hero__image {
+  width: 100%;
+  max-width: 876.47px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.header__hero__btn {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.header__hero__text__button,
+.header__hero__text__button-contato {
+  width: 136px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header__hero__text__button {
+  background: #296d65;
+  color: #fff;
+  border: none;
+}
+
+.header__hero__text__button-contato {
+  background-color: #fff;
+  border: 1px solid #1e403c;
+  color: #1e403c;
+}
+
+@media (min-width: 768px) {
+  .header__hero {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .header__hero__text__title {
+    font-size: 44px;
+    line-height: 55px;
+    margin-bottom: 10px;
+  }
+
+  .header__hero__text__description {
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .header__hero__image {
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+
+  .header__hero__btn {
+    justify-content: flex-start;
+  }
 }

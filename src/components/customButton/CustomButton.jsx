@@ -1,9 +1,8 @@
 import React from 'react';
 
-export default function CustomButton({ children, onClick, className, style, ...props }) {
+export default function CustomButton({ children, className, ...props }) {
     return (
         <button
-            onClick={onClick}
             className={className}
             {...props}
         >

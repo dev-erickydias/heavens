@@ -1,12 +1,9 @@
-import Image from 'next/image';
 
-export default function CustomImage({ src, alt, width, height, ...props }) {
+export default function CustomImage({ src, alt, ...props }) {
     return (
-        <Image
+        <img
             src={src}
             alt={alt}
-            width={width}
-            height={height}
             {...props}
         />
     );

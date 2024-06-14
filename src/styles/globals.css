@@ -1,19 +1,52 @@
-
 @import url(../vendor/normalize.css);
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display =trocar');
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display =trocar");
 .page {
   max-width: 90%;
   height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 0 15px; /* Adiciona padding horizontal para dispositivos móveis */
 }
-.servico__item {
-  background: #1e403c;
-  width: 235px !important;
-  height: 100.6px !important;
-  margin: 0 0 0 50px !important;
+
+.main {
+
+  width: 100%;
 }
-.servicos__item_contain {
-  display: flex;
+
+.logo__cursos {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza no mobile */
+  width: 80%; /* Ajusta a largura no mobile */
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .page {
+      padding: 0 30px; /* Ajusta o padding em telas maiores */
+  }
+
+  .main {
+      flex-direction: row; /* Alinha em linha em telas maiores */
+  }
+
+  .logo__cursos {
+      width: 60%; /* Ajusta a largura em telas maiores */
+      left: 40%; /* Ajusta a posição em telas maiores */
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+      max-width: 80%; /* Ajusta a largura máxima em telas maiores */
+  }
+
+  .logo__cursos {
+      width: 50%; /* Ajusta a largura em telas maiores */
+      left: 40%;
+      bottom: 50%; /* Ajusta a posição em telas maiores */
+  }
 }
