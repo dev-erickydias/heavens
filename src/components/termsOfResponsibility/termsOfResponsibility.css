@@ -1,0 +1,72 @@
+/* TermsOfResponsibility.module.css */
+
+.terms-of-responsibility {
+    background-color: #fffcf5;
+    color: #296D65;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  .terms-of-responsibility__title {
+    font-size: 2em;
+    color: #296D65;
+    border-bottom: 2px solid #D6B666;
+    padding-bottom: 10px;
+  }
+  
+  .terms-of-responsibility__subtitle {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #296D65;
+  }
+  
+  .terms-of-responsibility__address,
+  .terms-of-responsibility__date {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #296D65;
+  }
+  
+  .terms-of-responsibility__section-title {
+    font-size: 1.25em;
+    margin-top: 20px;
+    color: #296D65;
+    border-left: 4px solid #D6B666;
+    padding-left: 10px;
+  }
+  
+  .terms-of-responsibility__subsection-title {
+    font-size: 1.1em;
+    margin-top: 15px;
+    color: #296D65;
+  }
+  
+  .terms-of-responsibility__text {
+    font-size: 1em;
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #296D65;
+  }
+  
+  .terms-of-responsibility__contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .terms-of-responsibility__contact-item {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+  .terms-of-responsibility__contact-link {
+    color: #296D65;
+    text-decoration: none;
+  }
+  
+  .terms-of-responsibility__contact-link:hover {
+    text-decoration: underline;
+  }
+  

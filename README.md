@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>Projeto XYZ</h1>
 
-## Getting Started
+  <p>Este projeto foi desenvolvido utilizando Next.js para implementação das seguintes rotas: <code>home</code>, <code>cursos</code>, <code>not-found</code>. Todos os componentes são renderizados com Next.js e a navegação entre as rotas é feita utilizando o componente <code>Link</code> do Next.js. Além disso, foram implementadas as responsividades necessárias em todos os componentes.</p>
 
-First, run the development server:
+  <h2>Como Rodar o Projeto</h2>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+  <ol>
+    <li><strong>Clone o repositório:</strong><br>
+      <code>git clone https://github.com/seu-usuario/nome-do-repositorio.git</code>
+    </li>
+    <li><strong>Instale as dependências:</strong><br>
+      Navegue até o diretório do projeto e execute o seguinte comando para instalar todas as dependências necessárias:<br>
+      <code>cd nome-do-repositorio</code><br>
+      <code>npm install</code>
+    </li>
+    <li><strong>Inicie a aplicação:</strong><br>
+      Para iniciar a aplicação, utilize o seguinte comando:<br>
+      <code>npm run dev</code><br>
+      A aplicação será iniciada e estará disponível em <code>http://localhost:3000</code>.
+    </li>
+  </ol>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  <h2>Screenshots</h2>
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+  <h3>Tela Inicial</h3>
+  <img src="./public/screensshots/home.png" alt="Tela Inicial">
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+  <h3>Tela de Cursos</h3>
+  <img src="./public/screensshots/cursos.png" alt="Tela de Cursos">
 
-## Learn More
+  <h2>Detalhes das Implementações</h2>
 
-To learn more about Next.js, take a look at the following resources:
+  <h3>Rota <code>/</code></h3>
+  <ul>
+    <li>Descrição da implementação da página inicial.</li>
+    <li>Uso de componentes específicos e layout responsivo.</li>
+  </ul>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  <h3>Rota <code>/cursos</code></h3>
+  <ul>
+    <li>Descrição da implementação da página de cursos.</li>
+    <li>Detalhes sobre a listagem de cursos e navegação entre eles.</li>
+  </ul>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  <h3>Rota <code>/not-found</code></h3>
+  <ul>
+    <li>Explicação sobre a página de erro <code>404</code>.</li>
+    <li>Como foi tratada a apresentação de rotas não encontradas.</li>
+  </ul>
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <h2>Responsividade</h2>
+  <ul>
+    <li>Descrição detalhada das decisões de design responsivo.</li>
+    <li>Uso de media queries e técnicas empregadas para adaptar os componentes em diferentes dispositivos.</li>
+  </ul>

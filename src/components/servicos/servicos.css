@@ -1,0 +1,127 @@
+.servicos {
+  margin: 50px 0 0;
+  padding: 0 15px;
+}
+
+.servicos__title {
+  width: 100%;
+  max-width: 222px;
+  font-family: Josefin Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+  color: #734814;
+  margin: 0 0 30px;
+}
+
+.servicos__decription {
+  width: 100%;
+  max-width: 748px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
+  color: #734814;
+  margin-bottom: 50px;
+}
+
+.servico__item {
+  background: #1d3e3b;
+  width: 100px !important;
+  margin: 0 20px 0 0!important;
+  max-width: 310px !important;
+  height: auto !important;
+  padding-bottom: 20px;
+  border-radius: 12px;
+}
+
+.servico__item_container {
+  color: #fffcf5;
+  margin: 0 15px 0 15px;
+  width: auto;
+  height: auto;
+}
+
+.servico__item_contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.servico__item_title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.servico__item_text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: left;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .servicos {
+    margin: 100px 0 0;
+  }
+
+  .servicos__title {
+    font-size: 32px;
+  }
+
+  .servicos__decription {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .servico__item {
+    width: 300px!important;
+    max-width: 400px !important;
+    height: 100.6px !important;
+  }
+
+  .servico__item_container {
+    width: 220px;
+    height: 80px;
+  }
+
+  .servico__item_title {
+    font-size: 20.43px;
+    line-height: 32.69px;
+  }
+
+  .servico__item_text {
+    font-size: 20.43px;
+    line-height: 32.69px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .servicos {
+    padding: 0;
+  }
+
+  .servicos__title {
+    max-width: 100%;
+  }
+
+  .servicos__decription {
+    max-width: 100%;
+  }
+
+  .servico__item {
+    margin: 10px;
+  }
+
+  .servico__item_container {
+    margin: 0 15px;
+  }
+}

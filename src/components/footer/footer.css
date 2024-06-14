@@ -1,0 +1,132 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e403c;
+  padding: 30px 15px;
+}
+
+.footer__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__title {
+  width: 100%;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #fffcf5;
+  margin-bottom: 10px;
+}
+
+.footer__section_title {
+  width: 100%;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  text-align: center;
+  color: #fffcf5;
+  margin-bottom: 10px;
+}
+.footer__copy{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0;
+  gap: 5px;
+}
+.footer__section_copy {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.52px;
+  text-align: center;
+  color: #fffcf5;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__link {
+  width: 20px;
+  text-decoration: none;
+  color: #fffcf5;
+}
+
+.footer__termo {
+  width: 100%;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14.52px;
+  text-align: center;
+  color: #fffcf5;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer__content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .footer__title,
+  .footer__section_title,
+  .footer__section_copy,
+  .footer__termo {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 50px 30px;
+  }
+  .footer__section_copy {
+    margin: 0;
+    width: 100%;
+  }
+  .footer__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    gap: 20px;
+  }
+  .footer__title {
+    font-size: 20px;
+  }
+  .footer__copy{
+    flex-direction: row;
+    width: 100%;
+
+  }
+}
