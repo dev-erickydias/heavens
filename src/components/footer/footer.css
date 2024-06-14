@@ -64,7 +64,6 @@
 
 .footer__social {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 10px;
 }
@@ -104,6 +103,9 @@
   .footer__termo {
     text-align: left;
   }
+  .footer__social {
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -127,6 +129,6 @@
   .footer__copy{
     flex-direction: row;
     width: 100%;
-
   }
+  
 }
