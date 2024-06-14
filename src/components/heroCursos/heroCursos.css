@@ -98,10 +98,9 @@
   }
 }
 
-/* Estilos para telas maiores que 1024px */
 @media (min-width: 1024px) {
   .curso__text {
-      font-size: 1.4rem; /* Aumenta ainda mais a fonte em telas maiores */
+      font-size: 1.4rem;
       width: 70%;
   }
   .curso__contain {

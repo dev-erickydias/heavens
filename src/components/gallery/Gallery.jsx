@@ -1,6 +1,6 @@
 import CustomImage from "../customImage/CustomImage"
 import "./gallery.css"
-import gallery from "@/constants/gallery"
+import gallery from "../../constants/gallery"
 export default function Gallery(){
     return (
         <section className="gallery">

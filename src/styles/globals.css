@@ -6,7 +6,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0 15px; /* Adiciona padding horizontal para dispositivos móveis */
+  padding: 0 15px;
 }
 
 .main {
@@ -19,34 +19,36 @@
   z-index: -1;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Centraliza no mobile */
-  width: 80%; /* Ajusta a largura no mobile */
+  transform: translate(-50%, -50%);
+  width: 80%;
   height: auto;
 }
-
+.servicos{
+  display: none;
+}
 @media (min-width: 768px) {
   .page {
-      padding: 0 30px; /* Ajusta o padding em telas maiores */
+      padding: 0 30px;
   }
 
   .main {
-      flex-direction: row; /* Alinha em linha em telas maiores */
+      flex-direction: row;
   }
 
   .logo__cursos {
-      width: 60%; /* Ajusta a largura em telas maiores */
-      left: 40%; /* Ajusta a posição em telas maiores */
+      width: 60%;
+      left: 40%;
   }
 }
 
 @media (min-width: 1024px) {
   .page {
-      max-width: 80%; /* Ajusta a largura máxima em telas maiores */
+      max-width: 80%;
   }
 
   .logo__cursos {
-      width: 50%; /* Ajusta a largura em telas maiores */
+      width: 50%;
       left: 40%;
-      bottom: 50%; /* Ajusta a posição em telas maiores */
+      bottom: 50%;
   }
 }

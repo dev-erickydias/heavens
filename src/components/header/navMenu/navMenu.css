@@ -78,7 +78,7 @@
 
 @media (min-width: 1024px) {
   .nav {
-      height: 120px; /* Ajusta a altura para telas maiores */
+      height: 120px;
   }
 
   .header__nav__menu {
@@ -88,8 +88,8 @@
   }
 
   .nav__btn {
-      width: 200px; /* Ajusta a largura do botão para telas maiores */
-      font-size: 20px; /* Ajusta o tamanho da fonte para telas maiores */
-      padding: 15px 20px; /* Ajusta o espaçamento interno para telas maiores */
+      width: 200px;
+      font-size: 20px;
+      padding: 15px 20px;
   }
 }
