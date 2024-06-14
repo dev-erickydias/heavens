@@ -80,8 +80,8 @@
       flex-direction: row;
       justify-content: center;
       gap: 50px;
-      max-width: 1200px; /* Define largura máxima para centralizar e espaçar os cursos */
-      margin: 0 auto; /* Centraliza os cursos */
+      max-width: 1200px;
+      margin: 0 auto;
   }
 
   .curso {
@@ -90,20 +90,20 @@
   }
 
   .curso_title {
-      width: 100%; /* Ajusta a largura do título */
+      width: 100%;
       font-size: 32px;
       text-align: left;
   }
 
   .curso_decription {
-      width: 100%; /* Ajusta a largura da descrição */
+      width: 100%;
       font-size: 16px;
       text-align: left;
   }
 
   .curso_btn {
       width: 100%;
-      max-width: 350px; /* Ajusta a largura do botão */
+      max-width: 350px;
       margin: 37px 0 0;
   }
 }

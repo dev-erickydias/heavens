@@ -2,9 +2,9 @@ import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import "../styles/configsScroll.css"
 import NavMenu from "../components/header/navMenu/NavMenu";
-import Footer from "@/components/footer/Footer";
+import Footer from "../components/footer/Footer";
 
-import PopupMenu from "@/components/popupMenu/PopupMenu";
+import PopupMenu from "../components/popupMenu/PopupMenu";
 
 const inter = Inter({ subsets: ["latin"] });
 

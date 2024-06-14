@@ -1,4 +1,4 @@
-// components/ContactForm.js
+
 import React from 'react';
 import "./contatoForm.css"
 import Link from 'next/link';

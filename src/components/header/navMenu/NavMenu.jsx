@@ -4,7 +4,6 @@ import "./navMenu.css";
 import NavMenuItem from "../navMenuItem/NavMenuItem";
 import CustomImage from "../../customImage/CustomImage";
 import CustomButton from "../../customButton/CustomButton";
-import PopupMenu from "@/components/popupMenu/PopupMenu";
 import NavMenuMobile from "./navMenuMobile";
 
 export default function NavMenu() {
@@ -20,13 +19,10 @@ export default function NavMenu() {
       setIsMobile(window.innerWidth >= 200 && window.innerWidth <= 768);
     };
 
-    // Initial check
     handleResize();
 
-    // Add event listener
     window.addEventListener("resize", handleResize);
 
-    // Clean up event listener on component unmount
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 

@@ -1,6 +1,6 @@
-import Cursos from "@/components/cursos/Cursos";
-import CustomImage from "@/components/customImage/CustomImage";
-import HeroCursos from "@/components/heroCursos/HeroCursos";
+import Cursos from "../../components/cursos/Cursos";
+import CustomImage from "../../components/customImage/CustomImage";
+import HeroCursos from "../../components/heroCursos/HeroCursos";
 
 export default function Home() {
   return (

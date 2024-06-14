@@ -1,8 +1,8 @@
-// pages/not-found.jsx
 
-import CustomButton from "@/components/customButton/CustomButton";
+
+import CustomButton from "../components/customButton/CustomButton";
 import Link from 'next/link';
-import "../styles/404.css"; // Importa o arquivo de estilos CSS externo
+import "../styles/404.css";
 
 export default function NotFound() {
   return (
