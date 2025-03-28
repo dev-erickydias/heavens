@@ -1,18 +1,14 @@
-"use client";
-import "./hero.css";
-import CustomImage from "../../customImage/CustomImage";
-import CustomButton from "../../customButton/CustomButton";
-import { redirect } from "next/navigation";
-import Link from "next/link";
+'use client';
+import './hero.css';
+import CustomImage from '../../customImage/CustomImage';
+import CustomButton from '../../customButton/CustomButton';
+import { redirect } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Hero() {
   function redirectToSchedule(e) {
-    window.open(
-      "https://pt.zappysoftware.com/m/SELL?&goback=1&lang=pt-PT&t=20231014#pro"
-    );
+    window.open('https://w.app/heavenshair');
   }
-
-
 
   return (
     <section className="header__hero">
@@ -28,15 +24,19 @@ export default function Hero() {
             onClick={redirectToSchedule}
             className="header__hero__text__button"
           >
-           Agende Aqui
+            Agende Aqui
           </CustomButton>
-          <Link href="#contact"><CustomButton className="header__hero__text__button-contato ">Entre em contato</CustomButton></Link>
+          <Link href="#contact">
+            <CustomButton className="header__hero__text__button-contato ">
+              Entre em contato
+            </CustomButton>
+          </Link>
         </div>
       </div>
       <CustomImage
-        className={"header__hero__image"}
+        className={'header__hero__image'}
         src="/Vector_full.png"
-        alt={"Menina com Madeixas Feito no proprio salão"}
+        alt={'Menina com Madeixas Feito no proprio salão'}
       />
     </section>
   );
