@@ -1,69 +1,284 @@
 .contact {
-  margin: -150px auto 100px;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 630px;
+  margin: 80px 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s var(--ease-out);
+}
+
+.contact--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====== INNER LAYOUT ====== */
+
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: linear-gradient(135deg, var(--hh-cream), #f5efe5);
+  border-radius: var(--radius-lg);
+  padding: 40px 24px;
+  border: 1px solid var(--hh-border);
+}
+
+/* ====== INFO SIDE ====== */
+
+.contact__info {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s 0.1s var(--ease-out);
+}
+
+.contact--visible .contact__info {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact__label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--hh-gold-dark);
+  margin-bottom: 12px;
 }
 
 .contact__title {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  color: #8b4513;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--hh-green-dark);
+  margin: 0 0 16px;
+  line-height: 1.2;
 }
 
 .contact__description {
-  text-align: center;
-  color: #666;
-  font-size: 16px;
-  margin-bottom: 30px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--hh-brown-text);
+  line-height: 1.7;
+  margin: 0 0 28px;
+  max-width: 480px;
 }
 
-.contact__social {
-  border-top: 1px solid #d6b666;
+/* ====== DETAILS ====== */
+
+.contact__details {
   display: flex;
-  margin: 40px auto 0;
-  padding: 30px 0 0;
-  justify-content: space-around;
-  max-width: 333px;
+  flex-direction: column;
+  gap: 16px;
 }
+
+.contact__detail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact__detail__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(41, 109, 101, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--hh-green);
+  flex-shrink: 0;
+}
+
+.contact__detail__label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--hh-muted);
+  margin-bottom: 2px;
+}
+
+.contact__detail__value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--hh-green-dark);
+}
+
+/* ====== ACTION CARDS ====== */
+
+.contact__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact__card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid var(--hh-border);
+  text-decoration: none;
+  transition: all 0.4s var(--ease-out);
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.contact--visible .contact__card {
+  opacity: 1;
+  transform: translateX(0);
+  animation: fadeInUp 0.5s var(--ease-out) forwards;
+}
+
+.contact--visible .contact__card:nth-child(1) { animation-delay: 0.15s; }
+.contact--visible .contact__card:nth-child(2) { animation-delay: 0.25s; }
+.contact--visible .contact__card:nth-child(3) { animation-delay: 0.35s; }
+.contact--visible .contact__card:nth-child(4) { animation-delay: 0.45s; }
+
+.contact__card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: transparent;
+}
+
+.contact__card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.4s var(--ease-out);
+}
+
+.contact__card:hover .contact__card__icon {
+  transform: scale(1.1);
+}
+
+/* WhatsApp */
+.contact__card--whatsapp .contact__card__icon {
+  background: rgba(37, 211, 102, 0.1);
+  color: #25d366;
+}
+.contact__card--whatsapp:hover {
+  border-color: rgba(37, 211, 102, 0.3);
+}
+
+/* Instagram */
+.contact__card--instagram .contact__card__icon {
+  background: linear-gradient(135deg, rgba(228, 64, 95, 0.1), rgba(131, 58, 180, 0.1));
+  color: #e4405f;
+}
+.contact__card--instagram:hover {
+  border-color: rgba(228, 64, 95, 0.3);
+}
+
+/* Facebook */
+.contact__card--facebook .contact__card__icon {
+  background: rgba(24, 119, 242, 0.1);
+  color: #1877f2;
+}
+.contact__card--facebook:hover {
+  border-color: rgba(24, 119, 242, 0.3);
+}
+
+/* Email */
+.contact__card--email .contact__card__icon {
+  background: rgba(41, 109, 101, 0.08);
+  color: var(--hh-green);
+}
+.contact__card--email:hover {
+  border-color: rgba(41, 109, 101, 0.3);
+}
+
+.contact__card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact__card__title {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--hh-green-dark);
+  margin-bottom: 2px;
+}
+
+.contact__card__text {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--hh-muted);
+}
+
+.contact__card__arrow {
+  font-size: 18px;
+  color: var(--hh-muted);
+  transition: all 0.3s var(--ease-out);
+  opacity: 0;
+  transform: translateX(-8px);
+}
+
+.contact__card:hover .contact__card__arrow {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--hh-green);
+}
+
+/* ====== RESPONSIVO ====== */
 
 @media (min-width: 768px) {
   .contact {
-    margin: 0 auto 100px;
-    padding: 30px;
+    margin: 100px 0;
+  }
+
+  .contact__inner {
+    flex-direction: row;
+    padding: 50px 40px;
+    gap: 50px;
+    align-items: flex-start;
+  }
+
+  .contact__info {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .contact__actions {
+    flex: 1;
   }
 
   .contact__title {
-    font-size: 28px;
+    font-size: 34px;
   }
 
   .contact__description {
-    font-size: 18px;
-  }
-
-  .contact__social {
-    max-width: 100%;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1024px) {
-  .contact {
-    margin: 0 auto 100px;
-    padding: 40px;
-    max-width: 800px;
+  .contact__inner {
+    padding: 60px 56px;
+    gap: 70px;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 
   .contact__title {
-    font-size: 32px;
+    font-size: 38px;
   }
 
-  .contact__description {
-    font-size: 20px;
-  }
-
-  .contact__social {
-    max-width: 100%;
+  .contact__card {
+    padding: 18px 24px;
   }
 }
