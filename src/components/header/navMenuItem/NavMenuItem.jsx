@@ -1,4 +1,4 @@
-import "./navMenuItem.css"
+import "./navMenuItem.css";
 import Link from "next/link";
 
 export default function NavMenuItem({ href, children, className, onClick }) {

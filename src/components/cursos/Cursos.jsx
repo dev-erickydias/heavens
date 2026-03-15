@@ -29,7 +29,7 @@ export default function Cursos() {
             cabelo com o nosso curso para iniciantes em cabelereiro
           </p>
           <Link
-            target="_blanck"
+            target="_blank"
             href="https://www.instagram.com/cbheavenshair/"
           >
             <CustomButton className="curso_btn">

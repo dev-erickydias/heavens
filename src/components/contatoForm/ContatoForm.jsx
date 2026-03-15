@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import "./contatoForm.css";
 import Link from "next/link";
 import useScrollAnimation from "../../hooks/useScrollAnimation";

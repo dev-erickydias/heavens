@@ -1,7 +1,4 @@
-import React from 'react';
-import "./termsOfResponsibility.css"
-
-
+import "./termsOfResponsibility.css";
 
 export default function TermsOfResponsibility() {
   return (
