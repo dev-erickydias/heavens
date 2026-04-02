@@ -1,113 +1,110 @@
-# Heavens Hair
+<div align="center">
 
-Site institucional do salão **Heavens Hair**, especializado em cabelos afro, cacheados e ondulados, localizado em Lisboa, Portugal. Desenvolvido com Next.js 14 e App Router.
+# ✨ Heavens Hair ✨
 
-## Sobre o Projeto
+### 💇🏾‍♀️ Desperte sua Autenticidade
 
-O Heavens Hair é um salão liderado pelo hairstylist Wessel Santos, com mais de 14 anos de experiência em cabelos afros, colorimetria e tratamentos capilares. O site apresenta os serviços do salão, galeria de trabalhos, página de cursos e sistema de agendamento integrado com o Google Calendar.
+<br/>
 
-## Tecnologias
+![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-Custom_Properties-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Swiper](https://img.shields.io/badge/Swiper-11-6332F6?style=for-the-badge&logo=swiper&logoColor=white)
 
-- **Next.js 14** — App Router com Server e Client Components
-- **React 18** — Hooks, componentes funcionais
-- **CSS Modules/Custom Properties** — Sistema de design tokens
-- **Google Fonts** — Allura, Inter, Josefin Sans, Playfair Display
-- **Swiper** — Carrosséis e sliders
-- **Google Calendar API** — Integração de agendamento via URL
+<br/>
 
-## Como Rodar
+> 🌿 Site institucional do salão **Heavens Hair**, especializado em cabelos afro, cacheados e ondulados em **Lisboa, Portugal**.
+> Liderado pelo hairstylist **Wessel Santos**, com mais de **14 anos de experiência**.
 
-```bash
-# 1. Clone o repositório
-git clone https://github.com/seu-usuario/heavens.git
+<br/>
 
-# 2. Instale as dependências
-cd heavens
-npm install
+</div>
 
-# 3. Inicie o servidor de desenvolvimento
-npm run dev
-```
+---
 
-A aplicação estará disponível em `http://localhost:3000`.
+## 📸 Screenshots
 
-### Scripts Disponíveis
+<div align="center">
 
-| Comando | Descrição |
-|---------|-----------|
-| `npm run dev` | Servidor de desenvolvimento |
-| `npm run build` | Build de produção |
-| `npm start` | Servidor de produção |
-| `npm run lint` | Verificação de código com ESLint |
+| 🏠 Página Inicial | 📚 Página de Cursos |
+|:--:|:--:|
+| ![Home](public/screensshots/home.png) | ![Cursos](public/screensshots/cursos.png) |
 
-## Estrutura do Projeto
+</div>
+
+---
+
+## 🚀 Funcionalidades
+
+- ✅ **Página Inicial** — Hero animado, serviços, galeria de trabalhos e contato
+- ✅ **Serviços** — Grid de cards com preços, duração e ícones dinâmicos
+- ✅ **Galeria** — Portfólio de trabalhos com efeitos hover e overlay
+- ✅ **Agendamento** — Sistema em 3 etapas com integração ao **Google Calendar**
+- ✅ **Cursos** — Formação profissional em colorimetria e técnicas capilares
+- ✅ **Contato** — Links diretos para WhatsApp, Instagram, Facebook e Email
+- ✅ **Menu Responsivo** — Navegação adaptativa com popup mobile
+- ✅ **Animações por Scroll** — Hook customizado com IntersectionObserver
+- ✅ **Design System** — Tokens CSS, paleta de cores e tipografia consistente
+- ✅ **SEO** — Metatags otimizadas por página
+- ✅ **Página 404** — Página personalizada para rotas inexistentes
+- ✅ **Termos de Responsabilidade** — Página completa com termos legais
+
+---
+
+## 🛠️ Tecnologias
+
+<div align="center">
+
+| Tecnologia | Descrição |
+|:--:|:--|
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="30"/> **Next.js 14** | Framework React com App Router e SSR |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="30"/> **React 18** | Componentes funcionais e Hooks |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="30"/> **CSS3** | Custom Properties, animações e design tokens |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="30"/> **JavaScript** | ES6+ com JSX |
+| 🔤 **Google Fonts** | Allura, Inter, Josefin Sans, Playfair Display |
+| 📅 **Google Calendar** | Integração de agendamento via URL |
+| 🎠 **Swiper** | Carrosséis e sliders interativos |
+| 🔍 **ESLint** | Linting e qualidade de código |
+
+</div>
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```
 src/
-├── app/                          # Rotas (App Router)
-│   ├── layout.js                 # Layout global (NavMenu, Footer, PopupMenu)
-│   ├── page.jsx                  # Página inicial (Home)
+├── app/                          # 🗺️ Rotas (App Router)
+│   ├── layout.js                 # Layout global
+│   ├── page.jsx                  # Página inicial
 │   ├── not-found.jsx             # Página 404
-│   ├── agendar/page.jsx          # Página de agendamento
-│   ├── cursos/page.jsx           # Página de cursos
-│   └── terms-of-responsibility/  # Termos de responsabilidade
+│   ├── agendar/page.jsx          # Agendamento
+│   ├── cursos/page.jsx           # Cursos
+│   └── terms-of-responsibility/  # Termos
 │
-├── components/                   # Componentes React
-│   ├── agendamento/              # Sistema de agendamento (3 etapas + Google Calendar)
-│   ├── contatoForm/              # Seção de contato (WhatsApp, Instagram, Facebook, Email)
-│   ├── cursos/                   # Cards de cursos disponíveis
-│   ├── customButton/             # Botão reutilizável
-│   ├── customImage/              # Componente de imagem com next/image
-│   ├── footer/                   # Rodapé com marca, redes sociais e navegação
-│   ├── gallery/                  # Galeria de trabalhos com hover overlay
-│   ├── header/
-│   │   ├── header/               # Wrapper do header (Hero)
-│   │   ├── hero/                 # Seção hero com CTA e estatísticas
-│   │   ├── navMenu/              # Navegação desktop e mobile
-│   │   └── navMenuItem/          # Item individual do menu
-│   ├── heroCursos/               # Hero da página de cursos
-│   ├── loader/                   # Componente de loading
-│   ├── popupMenu/                # Menu mobile fullscreen
-│   ├── saibaMaisCursos/          # CTA para página de cursos
-│   ├── servicos/                 # Cards de serviços com preços
-│   └── termsOfResponsibility/    # Página de termos
+├── components/                   # 🧩 Componentes React
+│   ├── agendamento/              # Sistema de agendamento (3 etapas)
+│   ├── contatoForm/              # Seção de contato
+│   ├── cursos/                   # Cards de cursos
+│   ├── footer/                   # Rodapé
+│   ├── gallery/                  # Galeria de trabalhos
+│   ├── header/                   # Hero + Navegação
+│   ├── servicos/                 # Cards de serviços
+│   └── ...                       # Outros componentes
 │
-├── constants/
-│   └── gallery.js                # Dados das imagens da galeria
-│
-├── data/
-│   └── servicos.js               # Dados dos serviços (nome, preço, duração)
-│
-├── hooks/
-│   └── useScrollAnimation.js     # Hook de animação por scroll (IntersectionObserver)
-│
-├── styles/
-│   ├── globals.css               # Design tokens, variáveis CSS, estilos globais
-│   ├── configsScroll.css         # Configurações de scroll suave
-│   └── 404.css                   # Estilos da página 404
-│
-├── utils/
-│   └── Api.js                    # (Descontinuado) Antiga integração com API externa
-│
-└── vendor/
-    └── normalize.css             # Reset CSS
+├── constants/gallery.js          # 📊 Dados da galeria
+├── data/servicos.js              # 📊 Dados dos serviços
+├── hooks/useScrollAnimation.js   # 🪝 Hook de animação por scroll
+└── styles/                       # 🎨 Estilos globais e design tokens
 ```
 
-## Rotas
+---
 
-| Rota | Descrição |
-|------|-----------|
-| `/` | Página inicial — Hero, Serviços, CTA Cursos, Galeria, Contato |
-| `/agendar` | Sistema de agendamento em 3 etapas com integração Google Calendar |
-| `/cursos` | Página de cursos profissionais de cabelo afro |
-| `/terms-of-responsibility` | Termos de responsabilidade e uso |
+## 💈 Serviços Disponíveis
 
-## Serviços
-
-Todos os serviços são geridos localmente no arquivo `src/data/servicos.js`. Para adicionar, remover ou alterar serviços, basta editar este arquivo.
-
-| Serviço | Preço | Duração |
-|---------|-------|---------|
+| Serviço | 💰 Preço | ⏱️ Duração |
+|---------|:--------:|:----------:|
 | Corte Afro Feminino | 40€ | 60 min |
 | Corte Afro Masculino | 40€ | 45 min |
 | Coloração Completa | 40€ | 90 min |
@@ -117,70 +114,84 @@ Todos os serviços são geridos localmente no arquivo `src/data/servicos.js`. Pa
 | Reconstrução Capilar | 40€ | 90 min |
 | Botox Capilar | 40€ | 60 min |
 
-### Como editar serviços
+---
 
-Abra `src/data/servicos.js` e altere/adicione objetos no array:
+## 📋 Como Usar
 
-```javascript
-{
-  id_servico: 9,        // ID único
-  nome: "Novo Serviço", // Nome exibido no site
-  preco: 50,            // Preço em euros
-  a_partir_de: 45,      // Duração em minutos
-}
+### Pré-requisitos
+
+- **Node.js** 18+
+- **npm** ou **yarn**
+
+### 🔽 Clonar e Rodar
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/dev-erickydias/heavens.git
+
+# 2. Acesse a pasta do projeto
+cd heavens
+
+# 3. Instale as dependências
+npm install
+
+# 4. Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-## Sistema de Design
+🌐 Acesse: **http://localhost:3000**
 
-O projeto usa CSS Custom Properties (variáveis) definidas em `src/styles/globals.css` para manter consistência visual.
+### 📜 Scripts Disponíveis
 
-### Paleta de Cores
+| Comando | Descrição |
+|---------|-----------|
+| `npm run dev` | 🔧 Servidor de desenvolvimento com hot reload |
+| `npm run build` | 📦 Build otimizado para produção |
+| `npm start` | 🚀 Servidor de produção |
+| `npm run lint` | 🔍 Verificação de código com ESLint |
 
-| Variável | Cor | Uso |
-|----------|-----|-----|
-| `--hh-brown` | #734814 | Cor principal, texto de destaque |
-| `--hh-green` | #296d65 | Verde marca, botões, links |
-| `--hh-green-dark` | #1e403c | Backgrounds escuros, footer |
-| `--hh-gold` | #d6b666 | Acentos dourados, CTAs premium |
-| `--hh-cream` | #fffcf5 | Background claro principal |
+---
 
-### Tipografia
+## 🎨 Paleta de Cores
 
-| Variável | Fonte | Uso |
-|----------|-------|-----|
-| `--font-display` | Playfair Display | Títulos principais |
-| `--font-heading` | Josefin Sans | Subtítulos e navegação |
-| `--font-cursive` | Allura | Detalhes decorativos |
-| `--font-body` | Inter | Texto corrido |
+| Cor | Hex | Amostra |
+|-----|-----|:-------:|
+| Brown | `#734814` | 🟤 |
+| Green | `#296d65` | 🟢 |
+| Green Dark | `#1e403c` | 🌲 |
+| Gold | `#d6b666` | 🟡 |
+| Cream | `#fffcf5` | ⬜ |
 
-### Breakpoints Responsivos
+---
 
-| Breakpoint | Uso |
-|------------|-----|
-| 480px | Mobile pequeno |
-| 768px | Tablet / Mobile landscape |
-| 1024px | Desktop |
+## 📅 Sistema de Agendamento
 
-## Sistema de Agendamento
+O agendamento funciona em **3 etapas simples**:
 
-O agendamento funciona em 3 etapas:
+1. 💇 **Escolha o serviço** — selecione entre os serviços disponíveis
+2. 📅 **Data e horário** — escolha a data e horário desejado (09h–19h)
+3. 📝 **Seus dados** — preencha nome, telefone e email
 
-1. **Seleção do serviço** — o cliente escolhe entre os serviços disponíveis
-2. **Data e horário** — seleção de data (a partir de amanhã) e horário (09:00 às 19:00)
-3. **Dados pessoais** — nome, telefone e email do cliente
+Após confirmar, um link para o **Google Calendar** é gerado automaticamente com todos os detalhes! 🎉
 
-Após confirmar, é gerado um link para o **Google Calendar** com todos os detalhes do agendamento preenchidos automaticamente.
+---
 
-## Hook useScrollAnimation
+## 👨‍💻 Autor
 
-Hook customizado que usa `IntersectionObserver` para disparar animações CSS quando o elemento entra no viewport. Utilizado nos componentes: Hero, Serviços, Galeria, Contato e Cursos CTA.
+<div align="center">
 
-```javascript
-const [ref, isVisible] = useScrollAnimation(0.1); // threshold de 10%
-```
+**Ericky Dias**
 
-Retorna uma ref para o elemento e um booleano `isVisible` que ativa classes CSS de animação.
+[![GitHub](https://img.shields.io/badge/GitHub-dev--erickydias-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dev-erickydias)
 
-## Autor
+</div>
 
-**Ericky Dias** — [erickyhenriquesd@gmail.com](mailto:erickyhenriquesd@gmail.com)
+---
+
+<div align="center">
+
+Feito com 💚 por **Ericky Dias**
+
+⭐ Se gostou do projeto, deixe uma estrela!
+
+</div>
